@@ -22,8 +22,8 @@
     "url": "https://github.com/ahmadnassri/node-oas-request-readme/issues"
   },
   "scripts": {
-    "test": "",
-    "test:ci": ""
+    "test": "exit 0",
+    "test:ci": "exit 0"
   },
   "dependencies": {
     "@ahmadnassri/template-literals-engine": "^1.0.3"
