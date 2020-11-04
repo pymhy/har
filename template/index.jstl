@@ -1,0 +1,23 @@
+# ${data.info.title}
+
+${data.info.description}
+
+## Servers
+
+| description | url  |
+| ----------- | ---- |
+${data.servers.map(server => `| ${server.description} | \`${server.url}\` |`).join('\n')}
+
+## Methods
+
+${ fn.apply('method', Object
+    .entries(data.paths)
+    .map(([path, methods]) =>
+      Object
+        .entries(methods)
+        .map(([method, { operationId, summary }]) => ({ path, method, operationId, summary }))
+    )
+    .flat()
+    .filter(method => method.operationId)
+  )
+}

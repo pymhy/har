@@ -1,8 +1,8 @@
 version: 2.0
 
-id: template-node
+id: oas-request-readme
 
 about:
-  title: Node Lib Template
-  description: node library project template
-  repository: ahmadnassri/template-node-lib
+  title: "`oas-request` readme generator"
+  description: "`oas-request` readme generator"
+  repository: ahmadnassri/node-oas-request-readme
