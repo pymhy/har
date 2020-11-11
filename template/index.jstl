@@ -15,7 +15,7 @@ ${ fn.apply('method', Object
     .map(([path, methods]) =>
       Object
         .entries(methods)
-        .map(([method, { operationId, summary }]) => ({ path, method, operationId, summary }))
+        .map(([method, { operationId, summary, description }]) => ({ path, method, operationId, summary, description }))
     )
     .flat()
     .filter(method => method.operationId)
