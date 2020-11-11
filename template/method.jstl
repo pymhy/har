@@ -3,7 +3,6 @@
 > ${data.summary}
 
 ${data.description || ''}
-
 \`\`\`http
 ${data.method.toUpperCase()} ${data.path} HTTP/1.1
 \`\`\`
