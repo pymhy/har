@@ -1,6 +1,6 @@
-# ------------------------------------------------------------- #
-# Note: this file is automatically managed in template-template #
-# ------------------------------------------------------------- #
+# ----------------------------------------------------------- #
+# Note: this file originates in ahmadnassri/template-template #
+# ----------------------------------------------------------- #
 
 name: commit-lint
 
@@ -12,11 +12,11 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    # run once
+    # run on external PRs, but not on our internal PRs
     if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != github.repository
 
     steps:
-      - run: echo ::info ::duplicate check ran successfully
+      - run: echo ::info ::de-duplicate ran successfully
 
   commit-lint:
     timeout-minutes: 5
@@ -27,6 +27,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-commit-lint@v1.3.3
+      - uses: ahmadnassri/action-commit-lint@v1
         with:
           config: .github/linters/.commit-lint.yml

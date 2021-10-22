@@ -8,6 +8,10 @@
     "type": "git",
     "url": "https://github.com/ahmadnassri/node-oas-request-readme.git"
   },
+  "funding": {
+    "type" : "individual",
+    "url" : "https://github.com/sponsors/ahmadnassri"
+  },
   "license": "MIT",
   "bin": "lib/bin.js",
   "keywords": [],

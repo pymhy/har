@@ -1,10 +1,10 @@
-# ------------------------------------------------------------- #
-# Note: this file is automatically managed in template-template #
-# ------------------------------------------------------------- #
+# ----------------------------------------------------------- #
+# Note: this file originates in ahmadnassri/template-template #
+# ----------------------------------------------------------- #
 
 name: auto-merge
 
-on: pull_request_target
+on: pull_request
 
 jobs:
   auto-merge:
@@ -12,10 +12,8 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    if: github.actor == 'dependabot[bot]'
-
     steps:
       - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2.4
+      - uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
           github-token: ${{ secrets.GH_TOKEN }}

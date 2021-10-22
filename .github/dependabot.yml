@@ -1,6 +1,6 @@
-# ------------------------------------------------------------- #
-# Note: this file is automatically managed in template-template #
-# ------------------------------------------------------------- #
+# ----------------------------------------------------------- #
+# Note: this file originates in ahmadnassri/template-template #
+# ----------------------------------------------------------- #
 
 version: 2
 updates:
@@ -13,8 +13,6 @@ updates:
       include: scope
     schedule:
       interval: daily
-      time: "10:00"
-      timezone: America/Toronto
 
   - package-ecosystem: github-actions
     open-pull-requests-limit: 10
@@ -25,8 +23,6 @@ updates:
       include: scope
     schedule:
       interval: daily
-      time: "10:00"
-      timezone: America/Toronto
 
   - package-ecosystem: npm
     open-pull-requests-limit: 10
@@ -37,8 +33,6 @@ updates:
       include: scope
     schedule:
       interval: daily
-      time: "10:00"
-      timezone: America/Toronto
 
   - package-ecosystem: bundler
     open-pull-requests-limit: 10
@@ -49,8 +43,6 @@ updates:
       include: scope
     schedule:
       interval: daily
-      time: "10:00"
-      timezone: America/Toronto
 
   - package-ecosystem: docker
     open-pull-requests-limit: 10
@@ -61,5 +53,3 @@ updates:
       include: scope
     schedule:
       interval: daily
-      time: "10:00"
-      timezone: America/Toronto
