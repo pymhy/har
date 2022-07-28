@@ -9,8 +9,8 @@
     "url": "https://github.com/ahmadnassri/node-oas-request-readme.git"
   },
   "funding": {
-    "type" : "individual",
-    "url" : "https://github.com/sponsors/ahmadnassri"
+    "type": "individual",
+    "url": "https://github.com/sponsors/ahmadnassri"
   },
   "license": "MIT",
   "bin": "lib/bin.js",
@@ -30,6 +30,6 @@
     "test:ci": "exit 0"
   },
   "dependencies": {
-    "@ahmadnassri/template-literals-engine": "^1.0.3"
+    "@ahmadnassri/template-literals-engine": "^1.0.11"
   }
 }
