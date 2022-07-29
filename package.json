@@ -30,6 +30,6 @@
     "test:ci": "exit 0"
   },
   "dependencies": {
-    "@ahmadnassri/template-literals-engine": "^1.0.11"
+    "@ahmadnassri/template-literals-engine": "^2.0.0"
   }
 }
